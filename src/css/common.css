@@ -10,9 +10,82 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+
+  /* background-color: #90abc2; */
+  /* background: url(https://html5book.ru/wp-content/uploads/2015/07/background39.png); */
 }
 
+ul {
+  list-style: none;
+}
 img {
   display: block;
   max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 5px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  border-color: #212121;
+}
+button {
+	cursor: pointer;
+	border-radius: 8px;
+	padding: 5px 10px;
+	margin: 10px;
+	border-color: pink;
+	text-transform: uppercase;
+
+	font-size: 11px;
+	letter-spacing: 2px;
+}
+
+a:hover {
+  background: #2ee59d;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
+
+/*стилі форми 3 */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form input[type='number'] {
+  width: 200px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #bababa;
+}
+
+/* стилі для форми 2 */
+.timer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  line-height: 3;
+  font-size: 30px;
 }
